@@ -170,98 +170,82 @@
       border-radius: 4px;
       cursor: pointer;
       user-select: none;
+      width: 100px;
     }
     .btn-next:hover {
       background-color: #b0060f;
     }
     footer {
-        width: 100%;
-        padding: 24px 24px 24px 24px;
-        box-sizing: border-box;
-        background-color: #f2f2f2;
-        color: #666666;
-        font-size: 13px;
-      }
+      background: #f2f2f2;
+      color: #666;
+      font-size: 12px;
+      padding: 50px;
+      margin-top: 100px;
+    }
+    footer p {
+      margin: 0 0 16px 0;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px 48px;
+      margin-bottom: 16px;
+    }
+    .footer-column {
+      min-width: 120px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .footer-column a {
+      color: #666;
+      font-size: 12px;
+    }
+    .footer-column a:hover {
+      text-decoration: underline;
+    }
+    /* Language selector */
+    .language-selector {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 6px 12px;
+      background: #fff;
+      color: #444;
+      font-size: 14px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .language-selector svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+    }
+    .language-selector i {
+      margin-left: 8px;
+      font-style: normal;
+      border: solid #444;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(45deg);
+    }
+    /* Responsive */
+    @media (max-width: 480px) {
       .container {
-        max-width: 1280px;
-        margin: 0 auto;
+        padding: 48px 16px 0 16px;
       }
-      .contact {
-        margin-bottom: 16px;
+      footer {
+        padding: 16px;
       }
-      button {
-        width: 10%;
-        padding: 12px;
-        border-radius: 6px;
-        border: none;
-        font-weight: 700;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+      .footer-links {
+        gap: 16px 24px;
       }
-      button.next {
-        background-color: #e50914;
-        color: white;
-        margin-bottom: 16px;
-        margin-left: 10px;
-      }
-      button.next:hover {
-        background-color: #f40612;
-      }
-      .links {
-        display: flex;
-        flex-wrap: wrap;
-        gap:2px;
-      }
-      .link-column {
-        min-width: 120px;
-        flex: 1 1 50%;
-        box-sizing: border-box;
-        padding-right: 16px;
-      }
-      .link-column ul {
-        list-style: none;
-        /* padding: 0;
-        margin: 0; */
-      }
-      .link-column ul li {
-        margin-bottom: 4px;
-        color: #666666;
-        gap:2px;
-        font-size: 10px;
-        margin-left: 5px;
-      }
-      .language-button {
-        margin-top: 24px;
-        display: inline-flex;
-        align-items: center;
-        gap: 5px;
-        border: 1px solid #d1d5db;
-        background: white;
-        color: #4b5563;
-        font-size: 13px;
-        padding: 6px 12px;
-        border-radius: 2px;
-        cursor: pointer;
-        font-family: Arial, sans-serif;
-        width: 120px;
-      }
-      .language-button i {
-        font-style: normal;
-      }
-      .language-button svg {
-        width: 12px;
-        height: 12px;
-        stroke: currentColor;
-        stroke-width: 2;
-        fill: none;
-      }
-      @media (min-width: 640px) {
-        .link-column {
-          flex: 1 1 auto;
-          min-width: 120px;
-        }
-      }
+    }
   </style>
 </head>
 <body>
@@ -430,7 +414,7 @@
         </p>
       </div>
 
-      <button class="btn-next" type="button" onclick="window.location.href='4 paymentoption.html'">Sign In</button>
+      <button class="btn-next" type="button" onclick="window.location.href='4 paymentoption.html'">Next</button>
 
   
 
